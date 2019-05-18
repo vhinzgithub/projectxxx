@@ -85,13 +85,13 @@ $(document).ready(function(){
 
     $(window).resize(function(){
     
-    	 if (leftcontent<rightcontent){
-	    	$('#left-content').height(rightcontent);
-	    } 
+    	//  if (leftcontent<rightcontent){
+	    // 	$('#left-content').height(rightcontent);
+	    // } 
 
-	    if(leftcontent>rightcontent){
-	    	$('#right-content').height(leftcontent);
-	    }
+	    // if(leftcontent>rightcontent){
+	    // 	$('#right-content').height(leftcontent);
+	    // }
 
  
       
@@ -100,7 +100,7 @@ $(document).ready(function(){
     });
 
 
-
+    //this is it
     
 
    
@@ -136,11 +136,23 @@ $(document).ready(function(){
    		
    });
 
-   //  $(window).resize(function(){
-   //  	 $windowWidth = $(window).width();
-		 // $windowHeight = $(window).height();
-		          
+    $('.login-link').click(function(){
+        $('html, body').css({
+          overflow: 'hidden',
+          height: '100%'
+        });
 
-   //  	document.getElementById('ads').innerHTML = $windowWidth;
-   //  });
+        $('#login-container').css({display:'block'});
+    });
+
+
+    $('#login-close-button').click(function(){
+
+      $('html, body').css({
+          overflow: 'auto',
+          height: 'auto'
+        });
+      $('#login-container').css({display:'none'});
+    });
+
   });

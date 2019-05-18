@@ -141,11 +141,11 @@
 				<div id="video-section-container"><!-- video-section-container -->
 					<!-- BAGONG UPLOAD -->
 					<?php 
-						// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
-						//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
+						$conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
+						 mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
 
-						$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
-						mysqli_select_db($conn,'projectx_db') or die('could not select database');
+						// $conn = mysqli_connect('localhost','root','') or die('could not connect to server');
+						// mysqli_select_db($conn,'projectx_db') or die('could not select database');
 						
 						$SQL = "SELECT COUNT(id) FROM video";
 
@@ -304,8 +304,25 @@
 	</div>
 
 
+
+	<!-- THIS SHOULD BE ONE THE PART FILE OF THE FOOTER -->
+
 	<div id="login-container">
-		
+		<div id="login-window">
+			<div id="login-close-button">x</div>
+			<h4 id="window-title">Member Login</h4>
+			<div id="login-controls-container">
+				<form>
+					<label for"username">Username</label>
+					<input type="text" name="username" />
+					<label for"password">Password</label>
+					<input type="text" name="username" />
+					<input type="submit" value="Login" />
+				</form>
+				<a href="#">Forgot password?</a> | <a href="#">Register</a>
+			</div>
+			<div id="login-footer"></div>
+		</div>
 	</div>
 
 
