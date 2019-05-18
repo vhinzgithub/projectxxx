@@ -70,8 +70,8 @@
 							<div id="mobile-user-signup"><a href="#" id="mobile-sign-up-link">Sign Up</a></div>
 						</div>
 
-						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">&#9654;</a></h4>
-							<ul class="ul-menu">
+						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
+							<ul class="ul-menu active">
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Teens</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Adult</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Lesbian</a></li>
@@ -92,7 +92,7 @@
 						
 							
 						
-						<div class="div-category"><h4>LIVE CAM<a class="open-list" href="#" onclick="void">&#9654;</a></h4>
+						<div class="div-category"><h4>LIVE CAM<a class="open-list" href="#" onclick="void">▶</a></h4>
 							<ul class="ul-menu">
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Teens</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Adult</a></li>
@@ -111,7 +111,7 @@
 						</div>
 						
 						
-						<div class="div-category"><h4>MOST POPULAR<a class="open-list" href="#" onclick="void">&#9654;</a></h4>
+						<div class="div-category"><h4>MOST POPULAR<a class="open-list" href="#" onclick="void">▶</a></h4>
 							<ul class="ul-menu">
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Teens</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Adult</a></li>
@@ -153,7 +153,7 @@
 						$rec_count=mysqli_fetch_array($result);
 						$totalrecords=$rec_count[0];
 						
-						$viewperpage=24;
+						$viewperpage=10;
 						$totalpage = ceil($totalrecords/$viewperpage);
 						// echo $totalpage;
 
@@ -208,6 +208,34 @@
 						echo '</div>';
 					?>
 					
+
+
+					<h3 id="page-title">ANOTHER CATEGORY</h3>
+					<?php
+						$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT 1,1");
+						while($row=mysqli_fetch_assoc($SQL)){
+							echo '<a href="video_view.php" target="_parent"><div class="video-item-container">';
+								echo '<div class="video-item-content">';
+									echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
+										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
+									echo '</video>';
+								echo '</div>'; 
+
+								echo '<div class="video-item-title">';
+								echo '<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
+								echo '</div>';
+								echo '<div class="video-item-views-likes-dislikes">';
+									echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';
+					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>';
+					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>';
+								echo '</div>';
+
+							echo '</div></a>';
+						}
+
+						echo '<div id="pagination-container">';
+						echo '<ul>';
+					?>
 				</div><!-- video-section-container -->
 				
 
