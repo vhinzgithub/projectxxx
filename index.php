@@ -52,8 +52,8 @@
 				</div>
 
 				<div id="user-signin-signup-container">
-					<div id="user-signin"><a href="#" id="login-link">Sign In</a></div>
-					<div id="user-signup"><a href="#" id="sign-up-link">Sign Up</a></div>
+					<div id="user-signin"><a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a></div>
+					<div id="user-signup"><a href="#" id="sign-up-link" class="sign-up-link" onclick="void()">Sign Up</a></div>
 				</div>
 			</div>
 		</div>
@@ -66,8 +66,8 @@
 					<div id="main-nav">
 
 						<div id="mobile-user-signin-signup-container">
-							<div id="mobile-user-signin"><a href="#" id="mobile-login-link">Sign In</a></div>
-							<div id="mobile-user-signup"><a href="#" id="mobile-sign-up-link">Sign Up</a></div>
+							<div id="mobile-user-signin"><a href="#" id="mobile-login-link" class="login-link" onclick="void()">Sign In</a></div>
+							<div id="mobile-user-signup"><a href="#" id="mobile-sign-up-link" class="sign-up-link" onclick="void()">Sign Up</a></div>
 						</div>
 
 						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
@@ -141,11 +141,11 @@
 				<div id="video-section-container"><!-- video-section-container -->
 					<!-- BAGONG UPLOAD -->
 					<?php 
-						$conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
-						 mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
+						// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
+						//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
 
-						// $conn = mysqli_connect('localhost','root','') or die('could not connect to server');
-						// mysqli_select_db($conn,'projectx_db') or die('could not select database');
+						$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
+						mysqli_select_db($conn,'projectx_db') or die('could not select database');
 						
 						$SQL = "SELECT COUNT(id) FROM video";
 
@@ -304,6 +304,9 @@
 	</div>
 
 
+	<div id="login-container">
+		
+	</div>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -168,7 +168,7 @@
 							while($row=mysqli_fetch_assoc($SQL)){
 								echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 									echo '<div class="video-item-content">';
-										echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
+										echo '<video>';
 											echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
 										echo '</video>';
 									echo '</div>'; 
