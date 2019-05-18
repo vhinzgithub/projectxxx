@@ -216,7 +216,59 @@
 		</div>
 
 		<div id="footer-container">
-			<div id="footer-links"></div>
+			<div id="footer-links">
+				<div class="links-container">
+					<div class="links-header"><h5>INFORMATION</h5></div>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+
+				<div class="links-container">
+					<div class="links-header"><h5>Work With Us</h5></div>
+					<ul>
+						<li><a href="#">Content Partners</a></li>
+						<li><a href="#">Advertise</a></li>
+						<li><a href="#">Model Payment Program</a></li>
+						<li><a href="#">Webmasters</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+
+
+				<div class="links-container">
+					<div class="links-header"><h5>SUPPORT</h5></div>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact Support</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Feedback Forum</a></li>
+						<li><a href="#">Sitemap</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+
+
+				<div class="links-container">
+					<div class="links-header"><h5>OTHER LINKS</h5></div>
+					<ul>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Insights Blog</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+			</div>
 			<div id="copyright"></div>
 
 		</div>
