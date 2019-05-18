@@ -53,7 +53,7 @@
 
 				<div id="user-signin-signup-container">
 					<div id="user-signin"><a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a></div>
-					<div id="user-signup"><a href="#" id="sign-up-link" class="sign-up-link" onclick="void()">Sign Up</a></div>
+					<div id="user-signup"><a href="register.php" id="sign-up-link" class="sign-up-link">Sign Up</a></div>
 				</div>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 
 						<div id="mobile-user-signin-signup-container">
 							<div id="mobile-user-signin"><a href="#" id="mobile-login-link" class="login-link" onclick="void()">Sign In</a></div>
-							<div id="mobile-user-signup"><a href="#" id="mobile-sign-up-link" class="sign-up-link" onclick="void()">Sign Up</a></div>
+							<div id="mobile-user-signup"><a href="register.php" id="mobile-sign-up-link" class="sign-up-link">Sign Up</a></div>
 						</div>
 
 						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
