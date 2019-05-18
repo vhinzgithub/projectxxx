@@ -141,11 +141,11 @@
 				<div id="video-section-container"><!-- video-section-container -->
 					<!-- BAGONG UPLOAD -->
 					<?php 
-						// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
-						//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
+						$conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
+						 mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
 
-						$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
-						mysqli_select_db($conn,'projectx_db') or die('could not select database');
+						// $conn = mysqli_connect('localhost','root','') or die('could not connect to server');
+						// mysqli_select_db($conn,'projectx_db') or die('could not select database');
 						
 						$SQL = "SELECT COUNT(id) FROM video";
 
@@ -193,7 +193,19 @@
 							echo '</div></a>';
 						}
 
+						echo '<div id="pagination-container">';
+						echo '<ul>';
+
+
+
+						for($i=1;$i<=$totalpage;$i++){
+
+							echo "<li><a class='page-number' href='$_SERVER[PHP_SELF]?page=$i'>$i</a></li>";
+
+						}
 						
+						echo '</ul>';
+						echo '</div>';
 					?>
 					
 
@@ -202,7 +214,7 @@
 					<?php
 						$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT 1,10");
 						while($row=mysqli_fetch_assoc($SQL)){
-							echo '<a href="video_view.php" target="_parent"><div class="video-item-container">';
+							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
 									echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
 										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';

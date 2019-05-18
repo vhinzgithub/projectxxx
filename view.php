@@ -158,11 +158,11 @@
 					<div id="related-views">
 						<h3 id="page-title">RELATED VIDEOS</h3>
 						<?php
-							// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
-							//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
+							$conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
+							 mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
 
-							$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
-							mysqli_select_db($conn,'projectx_db') or die('could not select database');
+							// $conn = mysqli_connect('localhost','root','') or die('could not connect to server');
+							// mysqli_select_db($conn,'projectx_db') or die('could not select database');
 
 							$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT 1,10");
 							while($row=mysqli_fetch_assoc($SQL)){
