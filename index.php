@@ -139,13 +139,13 @@
 				</script>
 
 				<div id="video-section-container"><!-- video-section-container -->
-
+					<!-- BAGONG UPLOAD -->
 					<?php 
-						// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
-						//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
+						$conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
+						 mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
 
-						$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
-						mysqli_select_db($conn,'projectx_db') or die('could not select database');
+						// $conn = mysqli_connect('localhost','root','') or die('could not connect to server');
+						// mysqli_select_db($conn,'projectx_db') or die('could not select database');
 						
 						$SQL = "SELECT COUNT(id) FROM video";
 
@@ -182,7 +182,7 @@
 								echo '</div>'; 
 
 								echo '<div class="video-item-title">';
-								echo '<h5>'.$row['title'].'</h5>';
+								echo '<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
 								echo '</div>';
 								echo '<div class="video-item-views-likes-dislikes">';
 									echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';
