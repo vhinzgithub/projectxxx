@@ -1,36 +1,36 @@
 $(document).ready(function(){
+	adjustContainer();
+	$(window).resize(function(){
+    	adjustContainer();
+    });
 
-    var $containerWidth = $('.video-item-container').width();
-    var $containerHeight = $containerWidth * .7;
-    $('.video-item-container').height($containerHeight);
+	
 
- 	if($containerHeight<320){
- 		var $content = $containerHeight - 40;
- 	} else{
- 		var $content = $containerHeight - 60;
- 	}
     
-    $('.video-item-content').height($content);
+ 	
     
+  
 
-    $('#page-title').text('Container width: ' + $containerWidth + ' Container Height: ' + $containerHeight);
-   
-    $(window).resize(function(){
+    function adjustContainer(){
+    	var $containerWidth = $('.video-item-container').width();
 
-    	$containerWidth = $('.video-item-container').width();
-    	$containerHeight = $containerWidth * .7;
+	    var $contentHeight = $containerWidth *.55;
 
-    	$('.video-item-container').height($containerHeight);
-	    if($containerHeight<320){
-	 		var $content = $containerHeight - 40;
-	 	} else{
-	 		var $content = $containerHeight - 60;
-	 	}
-     	
- 
-    	$('#page-title').text('Container Height: ' + $containerHeight);
-    })
+	    var $titleHeight = $('.video-item-title').height();
+	    var $viewLike = $('.video-item-views-likes-dislikes').height();
 
+	    
+
+	    $('.video-item-content').height($contentHeight);
+
+	    var $containerHeight = $contentHeight + $titleHeight + $viewLike
+
+	    // alert($contentHeight + ' ' + $titleHeight + ' ' + $viewLike + ' Container Height: ' + $containerHeight);
+	    //adjust the height of the container to the height of content + height of title + height of views/like/dislikes
+	    $('.video-item-container').height($containerHeight);
+
+	    $('.video-item-container').css({'margin-bottom':'100'});
+    }
 
 	// function videoDisplayProportion(){
       
