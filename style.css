@@ -16,7 +16,7 @@ body,
 }*/
 
 body{
-    /*background-color:#f7f8f9;*/
+
 
 }
 
@@ -28,7 +28,7 @@ body{
     position: fixed;
     top: 0;
     border-bottom: 2px solid rgba(0,0,0,.1);
-    z-index: 99999;
+    z-index: 99995;
 }
 
 #header{
@@ -380,6 +380,7 @@ body{
 #main-content{
     margin-top: 60px!important;
     position: relative;
+
 }
 
 
@@ -401,9 +402,8 @@ body{
     left: -250px;
 
     transition:all 500ms linear;
-    z-index: 9997;
-    /*height: 1500px;*/
-    /*background-color: yellow;*/
+    z-index: 99995;
+    height: 700px;
 
 }
 
@@ -414,7 +414,9 @@ body{
 
 
 #left-main-nav{
-    /*background-color: yellow;*/
+    /*background-color: red;*/
+
+
 }
 
 #right-content{
@@ -426,6 +428,7 @@ body{
     height: auto;
     /*background-color: #f4f6f7;*/
     background-color: #ffffff;
+
 }
 
 
@@ -575,10 +578,9 @@ body{
     content: '';
 	width: 100%;
 	background-color: #4f555e;
-    /*position: fixed;*/
-    bottom: 0;
+   
     z-index: 99999;
-
+    position: relative;
 }
 
 #footer-links{
