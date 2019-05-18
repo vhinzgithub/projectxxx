@@ -404,6 +404,7 @@ body{
     transition:all 500ms linear;
     z-index: 99995;
     height: 700px;
+    /*overflow: scroll;*/
 
 }
 
@@ -415,7 +416,8 @@ body{
 
 #left-main-nav{
     /*background-color: red;*/
-
+    height: 600px;
+    /*overflow: scroll;*/
 
 }
 
@@ -520,8 +522,36 @@ body{
 
 /******VIEW SELECTED VIDEO****/
 
+#view-video{
+    width: 100%;
+    /*background-color: red;*/
+}
+
+#view-video video{
+    width: 100%;
+
+    max-width: 1000px;
+}
 
 
+#view-video:after{
+    display: block;
+    content: '';
+    clear: both;
+    margin-bottom: 50px!important;
+}
+
+
+#related-views{
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+
+
+
+/******PAGINATION*******/
 #pagination-container:before{
     clear: both;
     content: '';
