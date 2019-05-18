@@ -809,6 +809,23 @@ body{
     margin-top: 20px!important;
 }
 
+#registration-container p{
+    margin-top: 20px!important;
+    display: block;
+    text-align: center;
+    font-style: 18px;
+    font-weight: bold;
+}
+
+
+#registration-container #login-link{
+    display: block;
+    margin-top: 20px!important;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 #registration-right-section{
     width: 100%;
@@ -922,6 +939,7 @@ body{
     #registration-container{
         width: 500px;
     }
+
 
 
 }
@@ -1044,17 +1062,7 @@ body{
         float: left;
     }
 
-    #registration-container{
-        width: 35%;
-        margin-left: 0!important;
-        float:left;
-    }
-
-    #registration-right-section{
-        width: 65%;
-       float: left;
-
-    }
+   
 
 
 
@@ -1066,6 +1074,16 @@ body{
   
     #registration-container #registration-controls-container{
         width: 400px;
+    }
+
+    #registration-container p{
+        display: inline-block;
+        margin-left: 20px!important;
+    }
+
+    #registration-container #login-link{
+        display: inline-block;
+        margin-left: 20px!important;
     }
 }
 
@@ -1096,6 +1114,22 @@ body{
     .video-item-views-likes-dislikes{
         font-size: .8em;
     }*/
+
+     #registration-container{
+        width: 50%;
+        margin-left: 0!important;
+        float:left;
+    }
+
+    #registration-right-section{
+        width: 50%;
+       float: left;
+
+    }
+
+    #registration-container #registration-controls-container{
+        width: 350px;
+    }
 
 }
 
@@ -1139,6 +1173,15 @@ body{
 
     #footer-links .links-container ul li a{
         font-size: 14px;
+    }
+
+
+     #registration-container{
+        width: 40%;
+    }
+
+    #registration-right-section{
+        width: 60%;
     }
 }
 

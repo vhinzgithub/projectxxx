@@ -411,6 +411,8 @@
 							</select>
 
 							<input type="submit" value="Register" />
+							<p>Or</p>
+							<a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a>
 						</form>
 					</div>
 
