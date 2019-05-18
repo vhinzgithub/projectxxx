@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 
+ 
 
 	
 
@@ -51,28 +52,33 @@ $(document).ready(function(){
 
 
 
-    // Set left content and righ content on the same height
-    var rightcontent = $('#right-content').height();
-    var leftcontent = $('#left-content').height();
-
-  
-
-    if (leftcontent<rightcontent){
-    	$('#left-content').height(rightcontent);
-    } 
-
-    if(leftcontent>rightcontent){
-    	$('#right-content').height(leftcontent);
-    }
+    
 	
 	
-   
+
+  // function adjustMainNavMainContentHeight{
+  //     // Set left content and right content on the same height
+  //     var rightcontent = $('#right-content').height();
+  //     var leftcontent = $('#left-content').height();
+
+    
+
+  //     if (leftcontent<rightcontent){
+  //       $('#left-content').height(rightcontent);
+  //     } 
+
+  //     if(leftcontent>rightcontent){
+  //       $('#right-content').height(leftcontent);
+  //   }
+  // }
+    
+
+  //   adjustMainNavMainContentHeight();
       
     //   vidcontainerHeight = vidHeight + 60;
     //   $('.video-item-container').height(vidHeight);
     //   $('#page-title').text("Responsive Vide height: " + vidHeight + ' Container: ' + vidcontainerHeight);
 
-    
 
     
 
@@ -94,19 +100,38 @@ $(document).ready(function(){
     });
 
 
+
+    
+
+   
    $('.open-list').click(function(){
+      $('.div-category').children('ul').removeClass('active');
+
+      // $('.div-category').children('h4').children('a').text('▶');
+
+      var txt = $(this).text();
+      
+      if(txt=='▲'){
+         $(this).parent().parent().children('ul').addClass('active');
+
+         $(this).text('▶');
+      } else {
+        $('.div-category').children('h4').children('a').text('▶');
+      }
+    
+      
+     
+
 
       $(this).parent().parent().children('ul').toggleClass('active');
 
- 
-   		var txt = $(this).text();
+   		if(txt=='▶'){
+        $(this).text('▲');
+      }else{
+        $(this).text('▶');
+      }
 
       
-   		if(txt=='▶'){
-   			$(this).text('▲');
-   		}else{
-   			$(this).text('▶');
-   		}
    		
    		
    });
