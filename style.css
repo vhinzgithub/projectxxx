@@ -15,8 +15,10 @@ body,
 	height: 100%;
 }*/
 
+html,
 body{
-
+    width: 100%;
+    height:100;
 
 }
 
@@ -28,7 +30,7 @@ body{
     position: fixed;
     top: 0;
     border-bottom: 2px solid rgba(0,0,0,.1);
-    z-index: 99995;
+    z-index: 99999;
 }
 
 #header{
@@ -374,6 +376,9 @@ body{
 
 
 
+#logout-container{
+    display: none;
+}
 
 
 /******MAIN CONTENT******/
@@ -396,9 +401,9 @@ body{
 #left-content{
     background-color: #e3e6ea;
     width: 250px;
-    position: fixed;
+    position: absolute;
     /*right: -250px;*/
-    top: 60px;
+    top: 0px;
     left: -250px;
 
     transition:all 500ms linear;
@@ -410,16 +415,42 @@ body{
 
 #left-content.active{
     left: 0;
-
+    
 }
 
 
 #left-main-nav{
-    /*background-color: red;*/
+    /*background-color: red;*/copyright
     height: 600px;
-    /*overflow: scroll;*/
+  
 
 }
+
+#scroll-top-button{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    background-image: url('img/uparrow.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    z-index: 99999;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+
+#scroll-top-button:hover{
+    background-color: rgba(0,0,0,.8);
+}
+
 
 #right-content{
 	/*float: left;*/
@@ -433,6 +464,14 @@ body{
 
 }
 
+
+#page-title{
+    display: block;
+    margin-top: 15px!important;
+    margin-bottom: 20px!important;
+    font-weight: bold;
+    font-size: 30px;
+}
 
 
 /******VIDEO SECTION CONTAINER*****/
@@ -567,8 +606,8 @@ body{
     margin-top: 100px!important;
     margin-bottom: 50px!important;
     text-align: center;
-    /*background-color: red;*/
     line-height: 80px;
+    overflow: hidden;
 
 }
 
@@ -582,6 +621,14 @@ body{
     color: #ce7812;
     text-decoration: none;
 
+}
+
+
+
+#pagination-container:after{
+    display: block;
+    content: '';
+    clear: both;
 }
 
 #pagination-container .page-number:hover{
@@ -615,6 +662,7 @@ body{
 
 #footer-links{
 	padding: 20px 10px!important;
+    border-bottom:1px solid rgba(0,0,0,.1);
 }
 
 #footer-links .links-container{
@@ -646,6 +694,20 @@ body{
 
 #footer-links .links-container ul li a:hover{
     color: #ffffff;
+}
+
+
+#copyright{
+    height: 40px;
+    text-align: center;
+    background-color: #4f555e;
+    border-top:1px solid rgba(255,255,255,.1);
+    text-shadow:-1px 1px 1px #000000;s
+}
+
+#copyright p{
+    line-height: 40px;
+    color: rgba(255,255,255,.7);
 }
 
 
@@ -768,27 +830,39 @@ body{
 
 #registration-container{
     width: 100%;
-    padding-top: 20px!important;
-    padding-bottom: 50px!important;
+    padding-top: 15px!important;
+    padding-bottom: 30px!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin-top: 20px!important;
+    border:1px solid rgba(0,0,0,.2);
+
 }
+
+
+
 
 
 #registration-container #page-title{
     font-weight: bold;
+    font-size: 24px;
     margin-bottom: 30px!important;
     color: #777a7f;
 }
 
 
 
-#registration-container label{
+#registration-container label,
+#edit-profile-controls-container label{
     display: block;
     color: #8c8e91;
 }
 
 #registration-container input[type='text'],
 #registration-container input[type='password'],
-#registration-container select{
+#registration-container select,
+#edit-profile-controls-container input[type='text'],
+#edit-profile-controls-container select{
     display: block;
     width: 100%;
     height: 35px;
@@ -796,7 +870,9 @@ body{
  }
 
 
-#registration-container input[type='submit']{
+#registration-container input[type='submit'],
+#edit-profile-controls-container input[type='submit'],
+#edit-profile-controls-container button{
     display: block;
     width: 100%;
     height: 45px;
@@ -846,6 +922,96 @@ body{
     font-size: 30px;
 }
 
+#profile-container{
+    width: 100%;
+    height:100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px!important;
+    
+}
+
+
+
+#edit-profile-container{
+    width: 100%;
+    padding-top: 15px!important;
+    padding-bottom: 30px!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin-top: 20px!important;
+    border:1px solid rgba(0,0,0,.2);
+    z-index: 99994;
+    position: relative;
+    background-color: #ffffff;
+
+
+}
+
+
+/*****DASHBOARD******/
+#dashboard-container{
+    width: 100%;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    /*padding-top: 20px!important;*/
+}
+
+#profile-container{
+  margin-bottom: 40px!important;
+}
+
+#profile-pic{
+    width: 200px;
+    height: 200px;
+    background-color: #e3e6ea;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    border-radius: 100px;
+}
+
+#profile-info{
+    text-align: center;
+    margin-top: 15px!important;
+    font-size: 24px;
+}
+
+#profile-sub-menu{
+    text-align: center;
+
+}
+
+
+
+#profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+
+#profile .section-title{
+    background-color: #e6e9ef;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    font-weight: bold;
+    margin-top: 30px!important;
+}
+
+.details{
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    font-size: 16px;
+}
+
+.user-account-link:after{
+        content: ' ▼';
+    }
+
+
 
 @media only screen and (min-width : 480px){
     .video-item-container {
@@ -869,11 +1035,15 @@ body{
 
 
 
-    #registration-container{
+    #registration-container,
+    #edit-profile-container{
         width: 400px;
         margin-left: auto!important;
         margin-right: auto!important;
     }
+
+
+
 }
 
 
@@ -987,27 +1157,51 @@ body{
         display: none;
     }
 
+
+    /*****IN DASHBOARD ONLY****/
+    #logout-container{
+        display: block;
+        width: 20%;
+        height: 60px;
+        line-height: 60px;
+        float: left;
+        background-color: #d4d7db;
+        position: inherit;
+        
+    }
+
+    #logout-container a{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    #mobile-signout-link{
+        display: none;
+    }
+
     #search-bar-icon{
         display: none;
     }
 
     #left-content{
         display: block;
-        /*float: left;*/
-        /*position: relative;*/
+        float: left;
+        position: relative;
         left: 0;
-        /*width: 30%;*/
-        width: 250px;
-        top: 60px;
+        width: 30%;
+        top: 0px;
         transition:none;
         z-index: 9997;
     }
 
     #right-content{
-        width: 100%;
+        width: 70%;
         float: left;
         padding-left:30px!important; 
-       padding-left: 270px!important;
+       
     }
 
     #main-nav .div-category h4,
@@ -1063,6 +1257,13 @@ body{
     }
 
    
+    #registration-container{
+
+       /*padding-left: 45px!important;*/
+       padding-left: 50px!important;
+       padding-right: 50px!important;
+
+    }
 
 
 
@@ -1073,7 +1274,7 @@ body{
     }
   
     #registration-container #registration-controls-container{
-        width: 400px;
+        width: 100%;
     }
 
     #registration-container p{
@@ -1084,19 +1285,28 @@ body{
     #registration-container #login-link{
         display: inline-block;
         margin-left: 20px!important;
+
     }
+
+
+    #dashboard-container{
+        width: 100%;
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+
 }
 
 
 @media only screen and (min-width : 992px){
 
    
-   /* #left-content{
+    #left-content{
         width: 20%;
-    }*/
+    }
 
     #right-content{
-        width: 100%;
+        width: 80%;
         /*background-color: yellow*/
     }
 
@@ -1118,7 +1328,10 @@ body{
      #registration-container{
         width: 50%;
         margin-left: 0!important;
+        margin-bottom: 30px!important;
         float:left;
+        padding-left: 20px!important;
+        padding-right: 20px!important;
     }
 
     #registration-right-section{
@@ -1128,7 +1341,7 @@ body{
     }
 
     #registration-container #registration-controls-container{
-        width: 350px;
+        width: 100%;
     }
 
 }

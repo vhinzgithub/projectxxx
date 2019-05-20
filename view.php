@@ -52,8 +52,8 @@
 				</div>
 
 				<div id="user-signin-signup-container">
-					<div id="user-signin"><a href="#" id="login-link">Sign In</a></div>
-					<div id="user-signup"><a href="#" id="sign-up-link">Sign Up</a></div>
+					<div id="user-signin"><a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a></div>
+					<div id="user-signup"><a href="register.php" id="sign-up-link" class="sign-up-link">Sign Up</a></div>
 				</div>
 			</div>
 		</div>
@@ -66,8 +66,8 @@
 					<div id="main-nav">
 
 						<div id="mobile-user-signin-signup-container">
-							<div id="mobile-user-signin"><a href="#" id="mobile-login-link">Sign In</a></div>
-							<div id="mobile-user-signup"><a href="#" id="mobile-sign-up-link">Sign Up</a></div>
+							<div id="mobile-user-signin"><a href="#" id="mobile-login-link" class="login-link" onclick="void()">Sign In</a></div>
+							<div id="mobile-user-signup"><a href="register.php" id="mobile-sign-up-link" class="sign-up-link">Sign Up</a></div>
 						</div>
 
 						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
@@ -158,11 +158,11 @@
 					<div id="related-views">
 						<h3 id="page-title">RELATED VIDEOS</h3>
 						<?php
-							$conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
-							 mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
+							// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
+							//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
 
-							// $conn = mysqli_connect('localhost','root','') or die('could not connect to server');
-							// mysqli_select_db($conn,'projectx_db') or die('could not select database');
+							$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
+							mysqli_select_db($conn,'projectx_db') or die('could not select database');
 
 							$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT 1,10");
 							while($row=mysqli_fetch_assoc($SQL)){
@@ -253,7 +253,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="copyright"></div>
+			<div id="copyright"><p>Projectx 2019 &copy;</p></div>
 
 		</div>
 
@@ -261,8 +261,29 @@
 
 
 
+	<!-- THIS SHOULD BE PLANCED THE PART FILE OF THE FOOTER -->
+	<button id="scroll-top-button"></button>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<div id="login-container">
+		<div id="login-window">
+			<div id="login-close-button">x</div>
+			<h4 id="window-title">Member Login</h4>
+			<div id="login-controls-container">
+				<form action="dashboard.php" method="post">
+					<label for"username">Username</label>
+					<input type="text" name="username" />
+					<label for"password">Password</label>
+					<input type="text" name="username" />
+					<input type="submit" value="Login" />
+				</form>
+				<a href="#">Forgot password?</a> | <a href="#">Register</a>
+			</div>
+			<div id="login-footer"></div>
+		</div>
+	</div>
+	
+
+	<script src="js/jquery-3.4.1.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 

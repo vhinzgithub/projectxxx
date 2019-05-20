@@ -17,7 +17,6 @@
 
     <title>projectx</title>
 
-
 </head>
 <body>
 
@@ -51,27 +50,32 @@
 					</form>
 				</div>
 
-				<div id="user-signin-signup-container">
-					<div id="user-signin"><a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a></div>
-					<div id="user-signup"><a href="register.php" id="sign-up-link" class="sign-up-link">Sign Up</a></div>
+				<div id="logout-container">
+					<a href="index.php"><span class="glyphicon glyphicon-off"></span> Sign Out</a>
 				</div>
 			</div>
 		</div>
 		<!-- header-container -->
 
 		<div id="main-content">
+			
 			<div id="left-content">
 				<div id="left-main-nav">
 					<!-- main-nav -->
 					<div id="main-nav">
 
-						<div id="mobile-user-signin-signup-container">
-							<div id="mobile-user-signin"><a href="#" id="mobile-login-link" class="login-link" onclick="void()">Sign In</a></div>
-							<div id="mobile-user-signup"><a href="register.php" id="mobile-sign-up-link" class="sign-up-link">Sign Up</a></div>
+						<div class="div-category"><h4>My Account<a class="open-list" href="#" onclick="void">▲</a></h4>
+							<ul class="ul-menu active">
+								<li><a href="dashboard.php" class="nav-link"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+								<li><a href="profile.php" class="nav-link"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+								<li><a href="myuploads.php" class="nav-link"><span class="glyphicon glyphicon-open"></span> My Uploads</a></li>
+								<li id="mobile-signout-link"><a href="index.php" class="nav-link"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+
 						</div>
 
-						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
-							<ul class="ul-menu active">
+						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▶</a></h4>
+							<ul class="ul-menu">
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Teens</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Adult</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Lesbian</a></li>
@@ -130,11 +134,15 @@
 
 				</div>
 			</div>
+			<div id="right-content">
+				<div id="dashboard-container"><!-- dashboard-container -->
 
-			<div id="right-content"><!-- right-content -->
-				
-				
-				<h3 id="page-title">EXTREME VIDEOS</h3>
+					
+					
+
+					<div id="video-section-container"><!-- video-section-container -->
+
+						<h3 id="page-title">MY UPLOAD VIDEOS</h3>
 				<script type="text/javascript">
 					// var windowWidth= window.innerWidth;
 					// document.getElementById('page-title').innerHTML="Window Width: " + windowWidth;
@@ -209,41 +217,23 @@
 						echo '</ul>';
 						echo '</div>';
 					?>
+
+
+						
+						
+
+
+						
+					</div><!-- video-section-container -->
 					
 
 
-					<h3 id="page-title">ANOTHER CATEGORY</h3>
-					<?php
-						$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT 1,10");
-						while($row=mysqli_fetch_assoc($SQL)){
-							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
-								echo '<div class="video-item-content">';
-									echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
-										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
-									echo '</video>';
-								echo '</div>'; 
-
-								echo '<div class="video-item-title">';
-								echo '<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
-								echo '</div>';
-								echo '<div class="video-item-views-likes-dislikes">';
-									echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';
-					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>';
-					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>';
-								echo '</div>';
-
-							echo '</div></a>';
-						}
-
-						echo '<div id="pagination-container">';
-						echo '<ul>';
-					?>
-				</div><!-- video-section-container -->
-				
-
-
-			</div><!-- right-content -->
+				</div><!-- dashboard-container -->
+			</div>
+			
 		</div>
+
+		
 
 		<div id="footer-container">
 			<div id="footer-links">
@@ -304,35 +294,14 @@
 
 		</div>
 
-
-		
 	</div>
 
 
-	
 
-	<!-- THIS SHOULD BE PLANCED THE PART FILE OF THE FOOTER -->
 	<button id="scroll-top-button"></button>
 
-	<div id="login-container">
-		<div id="login-window">
-			<div id="login-close-button">x</div>
-			<h4 id="window-title">Member Login</h4>
-			<div id="login-controls-container">
-				<form action="dashboard.php" method="post">
-					<label for"username">Username</label>
-					<input type="text" name="username" />
-					<label for"password">Password</label>
-					<input type="text" name="username" />
-					<input type="submit" value="Login" />
-				</form>
-				<a href="#">Forgot password?</a> | <a href="#">Register</a>
-			</div>
-			<div id="login-footer"></div>
-		</div>
-	</div>
 
-		<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
