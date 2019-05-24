@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 	adjustContainer();
 	$(window).resize(function(){
     	adjustContainer();
@@ -23,28 +25,34 @@ $(document).ready(function(){
 
 	    $('.video-item-content').height($contentHeight);
 
-	    var $containerHeight = $contentHeight + $titleHeight + $viewLike
+	    var $containerHeight = $contentHeight + $titleHeight + $viewLike + 5;
 
 	    // alert($contentHeight + ' ' + $titleHeight + ' ' + $viewLike + ' Container Height: ' + $containerHeight);
 	    //adjust the height of the container to the height of content + height of title + height of views/like/dislikes
 	    $('.video-item-container').height($containerHeight);
 
 	    $('.video-item-container').css({'margin-bottom':'100'});
+
+
+	    
     }
 
-	// function videoDisplayProportion(){
-      
 
- //      // if (windowWidth <=320){
- //      // } else if (windowWidth <=480 ){
- //      // }else if (windowWidth <=640 ){
- //      // }else if (windowWidth <=768 ){
- //      // }else if (windowWidth <=992 ){
- //      // }else if (windowWidth <=1200 ){
- //      // }else{
- //      // }
- //    }
+    
+	setTimeout(function(){ 
+		$('#modal-ads-container').css({'display':'block'});
+		
+		$('#playingvid')[0].pause();
+		
 
- //    videoDisplayProportion();
+	}, 15000);
+
+
+	$('#modal-ads-container #close-ads-button').click(function(){
+		$('#modal-ads-container').hide();
+		$('#playingvid')[0].play();
+	});
+
+
 
 });
