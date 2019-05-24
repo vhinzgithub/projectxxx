@@ -186,7 +186,7 @@
 						while($row=mysqli_fetch_assoc($SQL)){
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
-									echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
+									echo '<video muted="" loop=""  preload=""  class="vid">';
 										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
@@ -219,7 +219,9 @@
 					?>
 
 
-						
+					<div id="ads-container" class="ads-on-uploads">
+							<img src="img/thisisit.jpg" />
+					</div>	
 						
 
 

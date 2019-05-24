@@ -51,7 +51,7 @@
 					</form>
 				</div>
 				<div id="logout-container">
-					<a href="index.php"><span class="glyphicon glyphicon-off"></span> Sign Out</a>
+					<a href="logout.php"><span class="glyphicon glyphicon-off"></span> Sign Out</a>
 				</div>
 				
 			</div>
@@ -74,7 +74,7 @@
 
 						</div>
 
-						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
+						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▶</a></h4>
 							<ul class="ul-menu">
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Teens</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Adult</a></li>
@@ -186,7 +186,7 @@
 						while($row=mysqli_fetch_assoc($SQL)){
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
-									echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
+									echo '<video muted="" loop=""  preload="" class="vid">';
 										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
@@ -253,11 +253,11 @@
 							// }
 							
 
-							$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT $offset,$viewperpage");
+							$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT $offset,10");
 							while($row=mysqli_fetch_assoc($SQL)){
 								echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 									echo '<div class="video-item-content">';
-										echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
+										echo '<video muted="" loop=""  preload=""  class="vid">';
 											echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
 										echo '</video>';
 									echo '</div>'; 

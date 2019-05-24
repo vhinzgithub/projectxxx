@@ -225,7 +225,10 @@
 					
 					
 
-
+					<div id="ads-container" class="ads-on-home-page">
+							<img src="img/thisisit.jpg" />
+					</div>
+					
 				</div><!-- dashboard-container -->
 			</div>
 			

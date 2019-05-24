@@ -178,7 +178,7 @@
 						while($row=mysqli_fetch_assoc($SQL)){
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
-									echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
+									echo '<video muted="" loop=""  preload=""  class="vid">';
 										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
@@ -210,7 +210,9 @@
 						echo '</div>';
 					?>
 					
-
+					<div id="ads-container" class="ads-on-home-page">
+							<img src="img/thisisit.jpg" />
+					</div>
 
 					<h3 id="page-title">ANOTHER CATEGORY</h3>
 					<?php
@@ -218,7 +220,7 @@
 						while($row=mysqli_fetch_assoc($SQL)){
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
-									echo '<video muted="" loop=""  preload="" poster="videos/sample.png" class="vid">';
+									echo '<video muted="" loop=""  preload=""  class="vid">';
 										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
@@ -319,7 +321,7 @@
 			<div id="login-close-button">x</div>
 			<h4 id="window-title">Member Login</h4>
 			<div id="login-controls-container">
-				<form action="dashboard.php" method="post">
+				<form action="login.php" method="post">
 					<label for"username">Username</label>
 					<input type="text" name="username" />
 					<label for"password">Password</label>

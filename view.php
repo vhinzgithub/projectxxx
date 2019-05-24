@@ -51,10 +51,22 @@
 					</form>
 				</div>
 
-				<div id="user-signin-signup-container">
-					<div id="user-signin"><a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a></div>
-					<div id="user-signup"><a href="register.php" id="sign-up-link" class="sign-up-link">Sign Up</a></div>
-				</div>
+				
+				<?php
+					if(isset($_SESSION['user'])){
+						echo '<div id="logout-container">';
+							echo '<a href="logout.php"><span class="glyphicon glyphicon-off"></span> Sign Out</a>';
+						echo '</div>';
+
+					}
+					else{
+						echo '<div id="user-signin-signup-container">';
+							echo '<div id="user-signin"><a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a></div>';
+							echo '<div id="user-signup"><a href="register.php" id="sign-up-link" class="sign-up-link">Sign Up</a></div>';
+						echo '</div>';
+
+					}
+				?>
 			</div>
 		</div>
 		<!-- header-container -->
@@ -65,10 +77,26 @@
 					<!-- main-nav -->
 					<div id="main-nav">
 
-						<div id="mobile-user-signin-signup-container">
-							<div id="mobile-user-signin"><a href="#" id="mobile-login-link" class="login-link" onclick="void()">Sign In</a></div>
-							<div id="mobile-user-signup"><a href="register.php" id="mobile-sign-up-link" class="sign-up-link">Sign Up</a></div>
-						</div>
+						<?php 
+							session_start();
+
+							
+
+							//SHOW/HIDE My Account
+							if (isset($_SESSION['user'])){
+								echo '<div class="div-category"><h4>My Account<a class="open-list" href="#" onclick="void">▲</a></h4>';
+									echo '<ul class="ul-menu active">';
+										echo '<li><a href="profile.php" class="nav-link"><span class="glyphicon glyphicon-user"></span> Profile</a></li>';
+										echo '<li><a href="myuploads.php" class="nav-link"><span class="glyphicon glyphicon-open"></span> My Uploads</a></li>';
+										echo '<li id="mobile-signout-link"><a href="index.php" class="nav-link"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>';
+									echo '</ul>';
+								echo '</div>';
+
+
+							} 
+						?>
+
+						
 
 						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
 							<ul class="ul-menu active">
@@ -136,9 +164,9 @@
 				
 
 				<div id="video-section-container"><!-- video-section-container -->
-					<div id="view-video">
-						<h3 id="page-title">EXTREME VIDEOS</h3>
-						<video preload="" controls>
+
+					<div id="view-video"><!-- view-video -->
+						<video preload="" controls id="playingvid">
 							<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>
 						</video>
 
@@ -152,8 +180,20 @@
 			               <a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>
 						</div>
 
-					</div>
+						<div id="modal-ads-container">
+
+							<div id="modal-ads-content">
+								<button id="close-ads-button">x</button>
+								<img src="img/thisisit.jpg" />
+							</div>
+							
+						</div>
+					</div><!-- view-video -->
 					
+
+					<div id="ads-container" class="ads-on-selected">
+							<img src="img/thisisit.jpg" />
+					</div>
 					
 					<div id="related-views">
 						<h3 id="page-title">RELATED VIDEOS</h3>
