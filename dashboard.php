@@ -149,7 +149,46 @@
 				</script>
 
 				<div id="video-section-container"><!-- video-section-container -->
-					<!-- BAGONG UPLOAD -->
+					<div id="tags-container">
+
+						
+						<ul>
+							<li id="tag-label"><h4><b>Tags:</b></h4></li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>
+							<li>Asian</li>
+							<li>Teens</li>
+							<li>Lesbian</li>
+							<li>Three some</li>	
+						</ul>
+					</div>
+
 					<?php 
 						// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
 						//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');

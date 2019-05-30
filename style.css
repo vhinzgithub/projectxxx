@@ -621,7 +621,42 @@ body{
 }
 
 
+#tags-container{
+    height: auto;
+    margin-bottom: 10px!important;
+    margin-left: 5px!important;
+}
 
+
+
+#tags-container ul{
+    float: left;
+    margin-left: 0!important;
+}
+
+#tags-container ul li{
+    list-style-type: none;
+    float: left;
+    padding: 5px!important;
+    background-color: #FF0000;
+    display: block;
+    color: #ffffff;
+    margin-right: 2px!important;
+    margin-bottom: 5px!important;
+
+}
+
+#tags-container ul li#tag-label{
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+#tags-container:after{
+    display: block;
+    clear: both;
+    content: '';
+}
 
 
 /******PAGINATION*******/
