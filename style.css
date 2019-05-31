@@ -637,7 +637,7 @@ body{
 #tags-container ul li{
     list-style-type: none;
     float: left;
-    padding: 5px!important;
+    padding: 2px!important;
     background-color: #FF0000;
     display: block;
     color: #ffffff;
