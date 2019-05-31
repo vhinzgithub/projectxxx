@@ -629,12 +629,14 @@ body{
 
 
 
-#tags-container ul{
+#tags-container ul,
+#tags-container-selected ul{
     float: left;
     margin-left: 0!important;
 }
 
-#tags-container ul li{
+#tags-container ul li,
+#tags-container-selected ul li{
     list-style-type: none;
     float: left;
     padding: 2px!important;
@@ -646,16 +648,22 @@ body{
 
 }
 
-#tags-container ul li#tag-label{
+#tags-container ul li#tag-label,
+#tags-container-selected ul li#tag-label{
     background-color: #ffffff;
     color: #000000;
     font-weight: bold;
 }
 
-#tags-container:after{
+#tags-container:after,
+#tags-container-selected:after{
     display: block;
     clear: both;
     content: '';
+}
+
+#tags-container-selected{
+    max-width:  980px;
 }
 
 

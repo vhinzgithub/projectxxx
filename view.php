@@ -164,8 +164,47 @@
 				
 
 				<div id="video-section-container"><!-- video-section-container -->
+						<div id="tags-container-selected">
 
+						
+							<ul>
+								<li id="tag-label"><h4><b>Tags:</b></h4></li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>
+								<li>Asian</li>
+								<li>Teens</li>
+								<li>Lesbian</li>
+								<li>Three some</li>	
+							</ul>
+						</div>
 					<div id="view-video"><!-- view-video -->
+
 						<video preload="" controls id="playingvid">
 							<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>
 						</video>
