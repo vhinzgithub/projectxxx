@@ -1009,6 +1009,9 @@ body{
     
 }
 
+#profile .field{
+    width: 150px;
+}
 
 
 #edit-profile-container{

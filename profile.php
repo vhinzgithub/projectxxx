@@ -157,16 +157,16 @@
 									<table>
 									
 									<tr>
-										<td>Username</td><td>jonathansmith</td>
+										<td class="field">Username</td><td>jonathansmith</td>
 									</tr>
 									<tr>
-										<td>e-mail</td><td>jonathansmith@gmail.com</td>
+										<td class="field">e-mail</td><td>jonathansmith@gmail.com</td>
 									</tr>
 									<tr>
-										<td>Gender</td><td>Male</td>
+										<td class="field">Gender</td><td>Male</td>
 									</tr>
 									<tr>
-										<td>Country</td><td>Philippines</td>
+										<td class="field">Country</td><td>Philippines</td>
 									</tr>
 								</table>
 								</div>
@@ -179,13 +179,13 @@
 									<table>
 									
 									<tr>
-										<td>Tertiary</td><td>Tertiary school</td>
+										<td class="field">Tertiary</td><td>Tertiary school</td>
 									</tr>
 									<tr>
-										<td>Secondary</td><td>Secondary School</td>
+										<td class="field">Secondary</td><td>Secondary School</td>
 									</tr>
 									<tr>
-										<td>Elementary</td><td>Elementary School</td>
+										<td class="field">Elementary</td><td>Elementary School</td>
 									</tr>
 									
 								</table>
