@@ -214,9 +214,11 @@
 							</div>
 
 						<div class="selected-video-item-views-likes-dislikes">
-							<span class="glyphicon glyphicon-eye-open"> 1M</span>
-			                <a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>
-			               <a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>
+							<span class="glyphicon glyphicon-eye-open">1M</span>
+			                <!-- <a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>
+			               <a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a> -->
+			               <button><span class="glyphicon glyphicon-thumbs-up">20K</span></button>
+					       <button><span class="glyphicon glyphicon-thumbs-down">1K</span></button>
 						</div>
 
 						<div id="modal-ads-container">
@@ -259,6 +261,8 @@
 										echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';
 						                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>';
 						                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>';
+						                // 
+
 									echo '</div>';
 
 								echo '</div></a>';
