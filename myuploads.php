@@ -143,85 +143,94 @@
 					<div id="video-section-container"><!-- video-section-container -->
 
 						<h3 id="page-title">MY UPLOAD VIDEOS</h3>
-				<script type="text/javascript">
-					// var windowWidth= window.innerWidth;
-					// document.getElementById('page-title').innerHTML="Window Width: " + windowWidth;
-				</script>
-
-				<div id="video-section-container"><!-- video-section-container -->
-					<!-- BAGONG UPLOAD -->
-					<?php 
-						// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
-						//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
-
-						$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
-						mysqli_select_db($conn,'projectx_db') or die('could not select database');
 						
-						$SQL = "SELECT COUNT(id) FROM video";
-
-						$result=mysqli_query($conn,$SQL);
-						$rec_count=mysqli_fetch_array($result);
-						$totalrecords=$rec_count[0];
+						<div id="upload-form-container">
+						<span id="chosenfile">No file chosen</span><br />
 						
-						$viewperpage=10;
-						$totalpage = ceil($totalrecords/$viewperpage);
-						// echo $totalpage;
-
-						if( isset($_GET['page']) ){
-							$page = $_GET['page']; 
-							$offset = $viewperpage * ($page - 1);
-						} else {
-							
-							$page = 1;
-							$offset=0;
-						}
-
-						// for($i=151;$i<=500;$i++){
-						// 	$title = "Video Title " . $i;
-						// 	$SQL = mysqli_query($conn,"INSERT INTO video(title) VALUES('$title')");
-						// }
+							<form action="upload.php" method="post" enctype="multipart/form-data">
 						
+							    <input type="file" name="fileToUpload" id="fileToUpload" hidden="hidden" />
+							    
+							    
+							    <a id="custom-button">Choose a video</a>
+							    <input type="submit" value="Upload Video" name="submit" id="upload-button" />
+							</form>
+						</div>
 
-						$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT $offset,$viewperpage");
-						while($row=mysqli_fetch_assoc($SQL)){
-							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
-								echo '<div class="video-item-content">';
-									echo '<video muted="" loop=""  preload=""  class="vid">';
-										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
-									echo '</video>';
-								echo '</div>'; 
+						<div id="video-section-container"><!-- video-section-container -->
+							<!-- BAGONG UPLOAD -->
+							<?php 
+								// $conn = mysqli_connect('localhost','nscblirr_admin','tantan@12345') or die('Could not connect to the server');
+								//  mysqli_select_db($conn,'nscblirr_projectx_db') or die('Could not select database');
 
-								echo '<div class="video-item-title">';
-								echo '<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
+								$conn = mysqli_connect('localhost','root','') or die('could not connect to server');
+								mysqli_select_db($conn,'projectx_db') or die('could not select database');
+								
+								$SQL = "SELECT COUNT(id) FROM video";
+
+								$result=mysqli_query($conn,$SQL);
+								$rec_count=mysqli_fetch_array($result);
+								$totalrecords=$rec_count[0];
+								
+								$viewperpage=10;
+								$totalpage = ceil($totalrecords/$viewperpage);
+								// echo $totalpage;
+
+								if( isset($_GET['page']) ){
+									$page = $_GET['page']; 
+									$offset = $viewperpage * ($page - 1);
+								} else {
+									
+									$page = 1;
+									$offset=0;
+								}
+
+								// for($i=151;$i<=500;$i++){
+								// 	$title = "Video Title " . $i;
+								// 	$SQL = mysqli_query($conn,"INSERT INTO video(title) VALUES('$title')");
+								// }
+								
+
+								$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT $offset,$viewperpage");
+								while($row=mysqli_fetch_assoc($SQL)){
+									echo '<a href="view.php" target="_parent"><div class="video-item-container">';
+										echo '<div class="video-item-content">';
+											echo '<video muted="" loop=""  preload=""  class="vid">';
+												echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
+											echo '</video>';
+										echo '</div>'; 
+
+										echo '<div class="video-item-title">';
+										echo '<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
+										echo '</div>';
+										echo '<div class="video-item-views-likes-dislikes">';
+											echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';
+							                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>';
+							                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>';
+										echo '</div>';
+
+									echo '</div></a>';
+								}
+
+								echo '<div id="pagination-container">';
+								echo '<ul>';
+
+
+
+								for($i=1;$i<=$totalpage;$i++){
+
+									echo "<li><a class='page-number' href='$_SERVER[PHP_SELF]?page=$i'>$i</a></li>";
+
+								}
+								
+								echo '</ul>';
 								echo '</div>';
-								echo '<div class="video-item-views-likes-dislikes">';
-									echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';
-					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>';
-					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>';
-								echo '</div>';
-
-							echo '</div></a>';
-						}
-
-						echo '<div id="pagination-container">';
-						echo '<ul>';
+							?>
 
 
-
-						for($i=1;$i<=$totalpage;$i++){
-
-							echo "<li><a class='page-number' href='$_SERVER[PHP_SELF]?page=$i'>$i</a></li>";
-
-						}
-						
-						echo '</ul>';
-						echo '</div>';
-					?>
-
-
-					<div id="ads-container" class="ads-on-uploads">
-							<img src="img/thisisit.jpg" />
-					</div>	
+							<div id="ads-container" class="ads-on-uploads">
+									<img src="img/thisisit.jpg" />
+							</div>	
 						
 
 

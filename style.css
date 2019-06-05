@@ -569,6 +569,44 @@ body{
 #upload-form-container #fileToUpload{
     margin-bottom: 10px!important;
 }
+
+
+
+
+#upload-form-container #fileToUpload{
+    display: none;
+}
+
+#upload-form-container #custom-button,
+#upload-form-container #upload-button{
+    padding: 7px!important;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px!important;
+    color: #ffffff;
+    font-weight: bold;
+    width: 130px;
+}
+
+#upload-form-container #custom-button{
+    background-color: #ce7812;
+    height: 33px;
+    display: inline-block;
+    text-align: center;
+}
+
+#upload-form-container #upload-button{
+    background-color: #42f49e;
+    color: #000000;
+    margin-top: 10px!important;
+}
+
+
+#chosenfile{
+    font-weight: bold;
+}
+
 /******VIEW SELECTED VIDEO****/
 
 #view-video{

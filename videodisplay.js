@@ -55,4 +55,23 @@ $(document).ready(function(){
 
 
 
+
+	// const fileToUploadbtn = document.getElementById('fileToUpload');
+	// const custombtn = document.getElementById('custom-button');
+	// const chosenfilebtn = document.getElementById('chosenfile');
+
+	$('#custom-button').click(function(){
+		$('#fileToUpload').click();
+	});
+
+	$('#fileToUpload').change(function(){
+		if($('#fileToUpload').val()){
+			var txt = $('#fileToUpload').val().replace(/.*(\/|\\)/, '');
+			$('#chosenfile').text('Filename: ' + txt);
+		} else{
+			$('#chosenfile').text('No chosen file');
+		}
+		
+		
+	});
 });
