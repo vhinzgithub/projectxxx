@@ -420,7 +420,7 @@ body{
 
 
 #left-main-nav{
-    /*background-color: red;*/copyright
+    /*background-color: red;*/
     height: 600px;
   
 
@@ -552,6 +552,7 @@ body{
     background-color: #d1d3d6;
 }
 
+
 .video-item-views-likes-dislikes span{
     color: #ce7812;
     margin-right: 10px!important;
@@ -560,6 +561,14 @@ body{
 
 
 
+#upload-form-container{
+    margin-bottom: 20px!important;
+    
+}
+
+#upload-form-container #fileToUpload{
+    margin-bottom: 10px!important;
+}
 /******VIEW SELECTED VIDEO****/
 
 #view-video{
@@ -620,6 +629,7 @@ body{
     background-color: #000000;
     padding-left: 5px!important;
 }
+
 
 #related-views{
     width: 100%;
