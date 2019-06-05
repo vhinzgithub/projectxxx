@@ -596,12 +596,20 @@ body{
     text-align: center;
 }
 
+#upload-form-container #custom-button:hover{
+    background-color: #f4d142;
+    color: #000000;
+}
+
 #upload-form-container #upload-button{
     background-color: #42f49e;
     color: #000000;
     margin-top: 10px!important;
 }
 
+#upload-form-container #upload-button:hover{
+    background-color: #41e5f4;
+}
 
 #chosenfile{
     font-weight: bold;
