@@ -515,7 +515,7 @@ body{
 
 .video-item-title{
     width: 100%;
-    padding-top: 5px!important;
+    padding-top: 3px!important;
     padding-bottom: 5px;
     height: 30px;
     overflow: hidden;
@@ -525,6 +525,7 @@ body{
     overflow: hidden;
     background-color: #d1d3d6;
 
+
 }
 
 
@@ -533,7 +534,7 @@ body{
     color: #ce7812;
     padding-left: 5px!important;
     padding-right: 5px!important;
-    height: 30px;
+    height: 35px;
     font-size: 20px;
     line-height: 30px;
 
@@ -643,9 +644,9 @@ body{
 
 .selected-video-item-title{
     width: 100%;
-    max-width: 980px;
+    /*max-width: 980px;*/
     height: 30px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding-left: 10px!important;
     
 }
@@ -1280,7 +1281,7 @@ body{
         width: 100%;
         padding-top: 5px!important;
         padding-bottom: 5px;
-        height: 30px;
+        height: 35px;
         line-height:30px;
     }
 
@@ -1288,7 +1289,7 @@ body{
     .video-item-title h5{
         padding-left: 5px!important;
         padding-right: 5px!important;
-        height: 30px;
+        height: 35px;
         font-size: 20px;
     }
 
@@ -1472,16 +1473,25 @@ body{
       /*height: auto;*/
     }
 
-    .video-item-title{
-        height: 25px;
-    }
+   /* .video-item-title{
+        height: 35px;
+    }*/
 
     .video-item-views-likes-dislikes{
         height: 25px;
+   
+        font-size: 12px;
+    }
+
+    .video-item-title{
+        height: 25px;
+    
     }
 
     .video-item-title h5{
         font-size: 14px;
+        line-height: 25px;
+        padding-top: 0!important;
     }
 
     #footer-links:after{
@@ -1610,6 +1620,11 @@ body{
     }
 
 
+    .video-item-views-likes-dislikes{
+        line-height: 30px;
+        height: 30px;
+    }
+
 }
 
 
@@ -1631,13 +1646,19 @@ body{
      }
 
     .video-item-title{
-        height: 20px;
+        height: 22px;
+        padding-top: 0!important;
         
     }
-    .video-item-title h5,
+
+    .video-item-title h5{
+        line-height: 30px;
+    }
+
     .video-item-views-likes-dislikes{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        padding-top: 0!important;
+        height: 25px;   
     }
 
     #footer-links .links-container{
