@@ -7,7 +7,7 @@
 
 #generic-form-container{
 
-	width:500px; /*change to the prepared width of the form*/
+	width:320px; /*change to the prepared width of the form*/
 	padding: 20px;
 	
 	margin-left: auto!important;
@@ -115,6 +115,10 @@
 }
 
 @media only screen and (min-width : 640px){
+	#generic-form-container{
+		width: 500px;
+	}
+	
 	#generic-form-container .form-button{
 		width: 200px;
 		
