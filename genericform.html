@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="genericstyle.css">
+</head>
+<body>
+
+	<div id="generic-form-container">
+		<h3 class="form-title">Generic Form</h3>
+		<form>
+			<label for="username" class="field-label">Username</label>
+			<input type="text" name="username" id="username" class="text-field" />
+
+			<label for="password" class="field-label">Password</label>
+			<input type="password" name="username" id="username" class="text-field" />
+
+			<label for="gender" class="field-label">Gender</label>
+			<select name="gender" id="gender" class="select-field">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+
+
+			<label class="field-label">Civil Status</label>
+			<input type="radio" name="civilstatus" id="single" class="radio-field" value="single" />
+			<label for="single" class="radio-label">Single</label>
+			<input type="radio" name="civilstatus" id="married" class="radio-field" value="married" />
+			<label for="married" class="radio-label">Married</label>
+
+
+			<br /><br />
+			<label for="comments" class="field-label">Comments</label>
+			<textarea class="textarea-field" name="comments" id="comments"></textarea>
+
+
+			
+
+			<div id="fileupload-container">
+				
+
+				<form action="" method="post" enctype="multipart/form-data">
+					<input type="file" name="fileupload" id="fileupload" hidden="hidden">
+					<a id="choosefilebutton">Choose File</a>
+					<span id="chosenfile">No chosen file</span>
+				</form>
+			</div>
+			<input type="submit" value="Ok" class="form-button">
+		</form>
+	</div>
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="generic-upload.js"></script>
+</body>
+</html>
