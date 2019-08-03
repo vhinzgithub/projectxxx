@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
 
- 
+  //FIX THE FOOTER TO BOTTOM OF HEIGHT OF HTML IS LESS THAN 500
+  // if($('html').height() <500){
+
+  //   $('#footer-container').css({'position':'fixed','bottom':'0px'});
+  // }
+
+  
 
 	
 
@@ -155,6 +161,30 @@ $(document).ready(function(){
     });
 
 
+    $('#alert-display').click(function(){
+       alertDisplay();
+    });
+
+    function alertDisplay(){
+      $('html, body').css({
+          overflow: 'hidden',
+          height: '100%'
+        });
+
+        $('#alert-container').css({display:'block'});
+    }
+
+
+    $('#alert-close-button').click(function(){
+
+      $('html, body').css({
+          overflow: 'auto',
+          height: 'auto'
+        });
+      $('#alert-container').css({display:'none'});
+    });
+
+
     $('#scroll-top-button').click(function(){
        // window.scrollTo(0,0);
         $('html, body').animate({'scrollTop': '0' }, 600);
@@ -170,6 +200,8 @@ $(document).ready(function(){
         $('#scroll-top-button').fadeOut();
       }
 
-      
     });
+
+
+    
   });

@@ -147,14 +147,16 @@
 						<div id="upload-form-container">
 						<span id="chosenfile">No file chosen</span><br />
 						
-							<form action="upload.php" method="post" enctype="multipart/form-data">
+							<form action="" method="post" enctype="multipart/form-data">
 						
 							    <input type="file" name="fileToUpload" id="fileToUpload" hidden="hidden" />
 							    
 							    
 							    <a id="custom-button">Choose a video</a>
 							    <input type="submit" value="Upload Video" name="submit" id="upload-button" />
+
 							</form>
+							<button id="alert-display">Alert</button>
 						</div>
 
 						<div id="video-section-container"><!-- video-section-container -->
@@ -311,6 +313,15 @@
 
 	<button id="scroll-top-button"></button>
 
+
+	<div id="alert-container">
+		<div id="alert-window">
+			<div id="alert-close-button">x</div>
+			<h4 id="window-title">Alert</h4>
+			<!--  -->
+			<div id="alert-message"><h3>Upload Successfull/Failed</h3></div>
+		</div>
+	</div>
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -160,26 +160,7 @@
 							<li>Teens</li>
 							<li>Lesbian</li>
 							<li>Three some</li>
-							<li>Asian</li>
-							<li>Teens</li>
-							<li>Lesbian</li>
-							<li>Three some</li>
-							<li>Asian</li>
-							<li>Teens</li>
-							<li>Lesbian</li>
-							<li>Three some</li>
-							<li>Asian</li>
-							<li>Teens</li>
-							<li>Lesbian</li>
-							<li>Three some</li>
-							<li>Asian</li>
-							<li>Teens</li>
-							<li>Lesbian</li>
-							<li>Three some</li>
-							<li>Asian</li>
-							<li>Teens</li>
-							<li>Lesbian</li>
-							<li>Three some</li>	
+							
 						</ul>
 					</div>
 					
@@ -225,12 +206,13 @@
 								echo '</div>'; 
 
 								echo '<div class="video-item-title">';
-								echo '<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
+								echo '<h5>Video engaging Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
 								echo '</div>';
 								echo '<div class="video-item-views-likes-dislikes">';
 									echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';
 					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>';
 					                echo '<a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a>';
+					                
 								echo '</div>';
 
 							echo '</div></a>';
@@ -267,7 +249,7 @@
 								echo '</div>'; 
 
 								echo '<div class="video-item-title">';
-								echo '<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>';
+								echo '<h5>Video engaging Sample Extreme most engaging engaging KSDJFLASDJFSFJSLDFJ</h5>';
 								echo '</div>';
 								echo '<div class="video-item-views-likes-dislikes">';
 									echo '<span class="glyphicon glyphicon-eye-open"> 1M</span>';

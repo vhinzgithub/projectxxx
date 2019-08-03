@@ -185,22 +185,7 @@
 								<li>Teens</li>
 								<li>Lesbian</li>
 								<li>Three some</li>
-								<li>Asian</li>
-								<li>Teens</li>
-								<li>Lesbian</li>
-								<li>Three some</li>
-								<li>Asian</li>
-								<li>Teens</li>
-								<li>Lesbian</li>
-								<li>Three some</li>
-								<li>Asian</li>
-								<li>Teens</li>
-								<li>Lesbian</li>
-								<li>Three some</li>
-								<li>Asian</li>
-								<li>Teens</li>
-								<li>Lesbian</li>
-								<li>Three some</li>	
+							
 							</ul>
 						</div>
 					<div id="view-video"><!-- view-video -->
@@ -210,8 +195,8 @@
 						</video>
 
 						<div class="selected-video-item-title">
-								<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ</h5>
-							</div>
+							<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ Video Title Sample Extreme most popular dulo na sakto lang</h5>
+						</div>
 
 						<div class="selected-video-item-views-likes-dislikes">
 							<span class="glyphicon glyphicon-eye-open">1M</span>
@@ -229,8 +214,33 @@
 							</div>
 							
 						</div>
+
+
+						
 					</div><!-- view-video -->
 					
+					<div id="comment-container">
+
+						<h3>Comments (3)</h3><!-- replace the number to the total number of comments -->
+						<div id="comments-list">
+							<!-- display the comments here -->
+							<p class="comment"><b>email@gmail.com</b>&nbsp;Sample comment. great video</p>
+							<p class="comment"><b>email@gmail.com</b>&nbsp;Sample comment. great video</p>
+							<p class="comment"><b>email@gmail.com</b>&nbsp;Sample comment. great video</p>
+
+						</div>
+
+						<!-- form form posting comment -->
+						<form>
+							<div class="email-comment">
+								<input type="text" name="email" id="email" placeholder="email">
+							</div>
+							<div class="comment-area">
+								<textarea id="comment" name="comment" placeholder="Your comment goes here..."></textarea>
+							</div>
+							<input type="submit" value="POST">
+						</form>
+					</div>
 
 					<div id="ads-container" class="ads-on-selected">
 							<img src="img/thisisit.jpg" />
