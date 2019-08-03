@@ -224,7 +224,10 @@
 						<h3>Comments (3)</h3><!-- replace the number to the total number of comments -->
 						<div id="comments-list">
 							<!-- display the comments here -->
-							<p class="comment"><b>email@gmail.com</b>&nbsp;Sample comment. great video</p>
+							<p class="comment"><b>email@gmail.com</b>&nbsp;Sample comment. great video Sample comment. 
+							great videoSample comment. great videoSample comment. great videoSample comment. great video 
+							Sample comment. great video Sample comment. great video Sample comment. great video
+							</p>
 							<p class="comment"><b>email@gmail.com</b>&nbsp;Sample comment. great video</p>
 							<p class="comment"><b>email@gmail.com</b>&nbsp;Sample comment. great video</p>
 
