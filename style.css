@@ -508,6 +508,7 @@ body{
     margin-bottom: 20px!important; 
     position: relative;
 
+
 }
 
 
@@ -517,6 +518,7 @@ body{
   position: relative;
   width: 100%;
   height: auto;
+  background-color: #000000;
 }
 
 
@@ -642,6 +644,7 @@ body{
     max-width: 980px;
     margin-bottom: 30px!important;
     background-color: #000000;
+
 
 }
 
