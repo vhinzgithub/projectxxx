@@ -26,7 +26,7 @@
 
 			<div id="header">
 				<div id="sitename">
-					<h1><a href="index.php">projectX</a></h1>
+					<h1><a href="index.php"></a></h1>
 				</div>
 
 				<div id="main-nav-toggle">
