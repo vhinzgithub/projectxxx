@@ -129,7 +129,22 @@
 					<!-- main-nav -->
 
 				</div>
+
+				<div id="left-banner-ads">
+					<div class="left-banner-ads-item">
+						<a href="#"><img src="img/ads1.png"></a>
+					</div>
+					<div class="left-banner-ads-item">
+						<a href="#"><img src="img/ads2.jpg"></a>
+					</div>
+					<div class="left-banner-ads-item">
+						<a href="#"><img src="img/ads3.jpg"></a>
+					</div>
+				</div>
 			</div>
+
+
+
 
 			<div id="right-content"><!-- right-content -->
 				
@@ -203,7 +218,7 @@
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
 									echo '<video muted="" loop="" preload=""  class="vid">';
-										echo '<source src="videos/bloopers.webm" type="video/mp4" ></source>';
+										echo '<source src="videos/nobela.mp4" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
 
@@ -246,7 +261,7 @@
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
 									echo '<video muted="" loop=""  preload=""  class="vid">';
-										echo '<source src="videos/portrait.mp4" type="video/mp4" ></source>';
+										echo '<source src="videos/nobela.mp4" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
 

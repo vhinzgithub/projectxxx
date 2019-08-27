@@ -133,6 +133,19 @@
 					<!-- main-nav -->
 
 				</div>
+
+				<div id="left-banner-ads">
+					<div class="left-banner-ads-item">
+						<a href="#"><img src="img/ads1.png"></a>
+					</div>
+					<div class="left-banner-ads-item">
+						<a href="#"><img src="img/ads2.jpg"></a>
+					</div>
+					<div class="left-banner-ads-item">
+						<a href="#"><img src="img/ads3.jpg"></a>
+					</div>
+				</div>
+				
 			</div>
 			<div id="right-content">
 				<div id="dashboard-container"><!-- dashboard-container -->
