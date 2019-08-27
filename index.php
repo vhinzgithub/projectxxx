@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>projectx</title>
-
+    
 
 </head>
 <body>
@@ -27,7 +27,7 @@
 
 			<div id="header">
 				<div id="sitename">
-					<h1><a href="index.php">projectX</a></h1>
+					<h1><a href="index.php"></a></h1>
 				</div>
 
 				<div id="main-nav-toggle">
@@ -195,13 +195,15 @@
 						// 	$SQL = mysqli_query($conn,"INSERT INTO video(title) VALUES('$title')");
 						// }
 						
+						
+
 
 						$SQL = mysqli_query($conn,"SELECT id,title FROM video LIMIT $offset,$viewperpage");
 						while($row=mysqli_fetch_assoc($SQL)){
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
-									echo '<video muted="" loop="" poster="videos/poster.jpg" preload=""  class="vid">';
-										echo '<source src="videos/output.mp4" type="video/mp4" ></source>';
+									echo '<video muted="" loop="" preload=""  class="vid">';
+										echo '<source src="videos/bloopers.webm" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
 
@@ -244,7 +246,7 @@
 							echo '<a href="view.php" target="_parent"><div class="video-item-container">';
 								echo '<div class="video-item-content">';
 									echo '<video muted="" loop=""  preload=""  class="vid">';
-										echo '<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>';
+										echo '<source src="videos/portrait.mp4" type="video/mp4" ></source>';
 									echo '</video>';
 								echo '</div>'; 
 
@@ -326,7 +328,6 @@
 			</div>
 
 			<div id="copyright"><p>Projectx 2019 &copy;</p></div>
-
 		</div>
 
 
@@ -362,14 +363,11 @@
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-	  <script type="text/javascript">
 
-
-
-    </script>
 	<script src="js/menu.js"></script>
 	<script src="js/modal.js"></script>
 	<script src="js/video-hover.js"></script>
 	<script src="js/videodisplay.js"></script>
+
 </body>
 </html>
