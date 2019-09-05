@@ -13,11 +13,11 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylenew.css">
 
     <title>projectx</title>
 
-
+    
 </head>
 <body>
 
@@ -190,8 +190,8 @@
 						</div>
 					<div id="view-video"><!-- view-video -->
 
-						<video preload="" controls id="playingvid">
-							<source src="videos/Nobela _ Join The Club _ (cover).mp4" type="video/mp4" ></source>
+						<video   preload="none" id="playingvid" autoplay controls>
+							<source src="videos/nobela.mp4" type="video/mp4" ></source>
 						</video>
 
 						<div class="selected-video-item-title">
@@ -204,6 +204,8 @@
 			               <a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a> -->
 			               <button><span class="glyphicon glyphicon-thumbs-up">20K</span></button>
 					       <button><span class="glyphicon glyphicon-thumbs-down">1K</span></button>
+					       <a href="#" class="linkadd" onclick="void()">&nbsp; <b>+ Add to</a>
+					       <a href="#" class="linkembed" onclick="void()">&nbsp; <b>Embed</b></a>
 						</div>
 
 						<div id="modal-ads-container">
@@ -215,7 +217,11 @@
 							
 						</div>
 
-
+						<div class="embed-container">
+							<h3>Embed Video</h3>
+							<a href="#" class="close-embed" onclick="void()">X</a>
+							<textarea></textarea>
+						</div>
 						
 					</div><!-- view-video -->
 					
@@ -380,15 +386,11 @@
 	
 
 	<script src="js/jquery-3.4.1.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-	  <script type="text/javascript">
-
-
-
-    </script>
+	 
 	<script src="js/menu.js"></script>
 	<script src="js/modal.js"></script>
 	<script src="js/video-hover.js"></script>

@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  
 
   //FIX THE FOOTER TO BOTTOM OF HEIGHT OF HTML IS LESS THAN 500
   // if($('html').height() <500){
@@ -165,6 +166,7 @@ $(document).ready(function(){
        alertDisplay();
     });
 
+
     function alertDisplay(){
       $('html, body').css({
           overflow: 'hidden',
@@ -191,6 +193,25 @@ $(document).ready(function(){
         //  alert('on to');
        
     });
+
+
+    $('.linkembed').click(function(){
+        $('html, body').css({
+          overflow: 'hidden',
+          height: '100%'
+        });
+
+        $('.embed-container').css({display:'block'});
+    });
+
+    $('.close-embed').click(function(){
+       $('html, body').css({
+          overflow: 'auto',
+          height: 'auto'
+        });
+      $('.embed-container').css({display:'none'});
+    });
+   
 
     $(window).scroll(function(){
       if($(this).scrollTop()>40){
