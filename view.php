@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="stylenew.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>projectx</title>
 
@@ -205,7 +205,7 @@
 			               <button><span class="glyphicon glyphicon-thumbs-up">20K</span></button>
 					       <button><span class="glyphicon glyphicon-thumbs-down">1K</span></button>
 					       <a href="#" class="linkadd" onclick="void()">&nbsp; <b>+ Add to</a>
-					       <a href="#" class="linkembed" onclick="void()">&nbsp; <b>Embed</b></a>
+					       <button class="linkembed">&nbsp; <b>Embed</b></button>
 						</div>
 
 						<div id="modal-ads-container">
@@ -219,8 +219,9 @@
 
 						<div class="embed-container">
 							<h3>Embed Video</h3>
-							<a href="#" class="close-embed" onclick="void()">X</a>
-							<textarea></textarea>
+							<button class="close-embed">X</button>
+							<!-- <a href="#" class="close-embed" onclick="void()">X</a> -->
+							<textarea class="embed-text"></textarea>
 						</div>
 						
 					</div><!-- view-video -->

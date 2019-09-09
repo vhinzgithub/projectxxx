@@ -559,8 +559,15 @@ body {
 .close-embed {
     color: #ffffff;
     position: absolute;
-    right: 30px;
+    right: 20px;
     top: 20px;
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    display: block;
+    border:1px solid #ffffff;
+    background-color: #000000;
 }
 
     .close-embed:hover {
@@ -1380,6 +1387,10 @@ body {
         #modal-ads-container img {
             height: 110px;
         }
+
+    .close-embed{
+        right: 40px;
+    }
 }
 
 @media only screen and (min-width : 768px) {
@@ -1574,6 +1585,10 @@ body {
     #modal-ads-container img {
         height: 120px;
     }
+
+    .close-embed{
+        right: 30px;
+    }
 }
 
 
@@ -1627,6 +1642,10 @@ body {
 
     #sitename h1 a {
         background-size: 40%;
+    }
+
+    .close-embed{
+        right: 50px;
     }
 }
 
@@ -1684,4 +1703,6 @@ body {
     #sitename h1 a {
         background-size: 25%;
     }
+
+    
 }
