@@ -98,21 +98,16 @@
 
 						
 
-						<div class="div-category"><h4>VIDEOS<a class="open-list" href="#" onclick="void">▲</a></h4>
+						<div class="div-category"><h4><a class="open-list" href="#" onclick="void">▲</a></h4>
 							<ul class="ul-menu active">
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Teens</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Adult</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Lesbian</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Threesome</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Amateur</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Mature</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Public</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Celebrity</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Gangbang</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Latina</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Asian</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Pinay</a></li>
-								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Japanese</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> About</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> News</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Photos</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Activities</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Advisories</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Disclosures</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Careers</a></li>
+								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Press releases</a></li>
 							</ul>
 
 						</div>
@@ -120,7 +115,7 @@
 						
 							
 						
-						<div class="div-category"><h4>LIVE CAM<a class="open-list" href="#" onclick="void">▶</a></h4>
+						<!-- <div class="div-category"><h4>LIVE CAM<a class="open-list" href="#" onclick="void">▶</a></h4>
 							<ul class="ul-menu">
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Teens</a></li>
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Adult</a></li>
@@ -149,7 +144,7 @@
 								<li><a href="#" class="nav-link"><span class="glyphicon glyphicon-facetime-video"></span> Mature</a></li>
 								
 							</ul>
-						</div>
+						</div> -->
 						
 
 					</div>
@@ -167,7 +162,7 @@
 						<div id="tags-container-selected">
 
 						
-							<ul>
+							<!-- <ul>
 								<li id="tag-label"><h4><b>Tags:</b></h4></li>
 								<li>Asian</li>
 								<li>Teens</li>
@@ -186,11 +181,13 @@
 								<li>Lesbian</li>
 								<li>Three some</li>
 							
-							</ul>
+							</ul> -->
 						</div>
 					<div id="view-video"><!-- view-video -->
-
-						<video   preload="none" id="playingvid" autoplay controls>
+						<div class="video-ads-top">
+							<a href="#">This a sample ads displaying on top of the video</a>
+						</div>
+						<video   preload="none" id="playingvid" autoplay  controls>
 							<source src="videos/nobela.mp4" type="video/mp4" ></source>
 						</video>
 
@@ -217,15 +214,17 @@
 							
 						</div>
 
-						<div class="embed-container">
+						
+						
+					</div><!-- view-video -->
+					
+					<div class="embed-container">
 							<h3>Embed Video</h3>
 							<button class="close-embed">X</button>
 							<!-- <a href="#" class="close-embed" onclick="void()">X</a> -->
 							<textarea class="embed-text"></textarea>
 						</div>
 						
-					</div><!-- view-video -->
-					
 					<div id="comment-container">
 
 						<h3>Comments (3)</h3><!-- replace the number to the total number of comments -->

@@ -448,6 +448,8 @@ body {
         text-decoration: none;
     }
 
+
+
 .video-item-container {
     width: 100%;
     margin-left: auto !important;
@@ -539,6 +541,7 @@ body {
     position: relative;
     display: none;
     background-color: rgba(0,0,0,.3);
+
 }
 
 .linkadd,
@@ -619,7 +622,38 @@ body {
     max-width: 980px;
     margin-bottom: 30px !important;
     background-color: #000000;
+
 }
+
+
+
+#view-video:after{
+    content: " ";
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    background-image: url('img/d-helper-logo.png');
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom:20px;
+    right: 30px;
+}
+
+.video-ads-top{
+    width: 100%;
+    height: 40px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    z-index: 99999;
+}
+
+.video-ads-top a{
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 18px;
+}
+
 
     #view-video video {
         width: 100%;
@@ -1655,6 +1689,10 @@ body {
 
     .video-item-container {
         width: 20%;
+    }
+
+    .embed-container{
+        max-width: 980px;
     }
 
     .video-item-title {
