@@ -8,13 +8,15 @@ html,
 body {
     width: 100%;
     height: 100%;
-
+    background-color: #000000;
 }
 
 
 #main-content-container{
     background-color: #000000;
 }
+
+
 
 /******HEADER******/
 #header-container {
@@ -357,6 +359,7 @@ body {
 #main-content {
     margin-top: 60px !important;
     position: relative;
+    background-color: #000000;
 }
 
 
@@ -1574,6 +1577,10 @@ body {
     }
 
 
+    #single-main-content{
+        background-color: #000000;
+    }
+
     #single-content{
         margin: 0 auto!important;
         width: 768px;
@@ -1728,6 +1735,18 @@ body {
             font-size: 14px;
             line-height: 25px;
         }
+
+
+   #single-content #view-video{
+        width: 100%;
+       
+
+   }
+
+   #single-content #view-video video{
+        width: 100%!important;
+        max-height: 600px;
+   }
 
     #footer-links .links-container {
         text-align: left;

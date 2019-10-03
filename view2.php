@@ -23,55 +23,10 @@
 
 	<div id="main-content-container">
 		<!-- header-container -->
-		<div id="header-container">
-
-			<div id="header">
-				<div id="sitename">
-					<h1><a href="index.php">projectX</a></h1>
-				</div>
-
-				<div id="main-nav-toggle">
-					<span class="toggle-bar"></span>
-					<span class="toggle-bar"></span>
-					<span class="toggle-bar"></span>
-				</div>
-
-				<div id="search-bar-icon">
-					<span class="glyphicon glyphicon-search"></span>
-				</div>
-
-				<div id="search-bar-container">
-					<form>
-						<div id="search-bar-input-text-container">
-							<input type="text" />
-						</div>
-						<div id="search-bar-input-submit-container">
-							<input type="submit" value="Search" />
-						</div>
-					</form>
-				</div>
-
-				
-				<?php
-					if(isset($_SESSION['user'])){
-						echo '<div id="logout-container">';
-							echo '<a href="logout.php"><span class="glyphicon glyphicon-off"></span> Sign Out</a>';
-						echo '</div>';
-
-					}
-					else{
-						echo '<div id="user-signin-signup-container">';
-							echo '<div id="user-signin"><a href="#" id="login-link" class="login-link" onclick="void()">Sign In</a></div>';
-							echo '<div id="user-signup"><a href="register.php" id="sign-up-link" class="sign-up-link">Sign Up</a></div>';
-						echo '</div>';
-
-					}
-				?>
-			</div>
-		</div>
+		
 		<!-- header-container -->
 
-		<div id="main-content">
+		<div id="single-main-content">
 			
 
 			<div id="single-content"><!-- right-content -->
@@ -92,15 +47,7 @@
 							<h5>Video Title Sample Extreme most popular KSDJFLASDJFSFJSLDFJ Video Title Sample Extreme most popular dulo na sakto lang</h5>
 						</div>
 
-						<div class="selected-video-item-views-likes-dislikes">
-							<span class="glyphicon glyphicon-eye-open">1M</span>
-			                <!-- <a href="#"><span class="glyphicon glyphicon-thumbs-up"> 20K</span></a>
-			               <a href="#"><span class="glyphicon glyphicon-thumbs-down"> 1K</span></a> -->
-			               <button><span class="glyphicon glyphicon-thumbs-up">20K</span></button>
-					       <button><span class="glyphicon glyphicon-thumbs-down">1K</span></button>
-					       <a href="#" class="linkadd" onclick="void()">&nbsp; <b>+ Add to</a>
-					       <button class="linkembed">&nbsp; <b>Embed</b></button>
-						</div>
+						
 
 						<div id="modal-ads-container">
 
@@ -140,88 +87,13 @@
 			</div><!-- single-content -->
 		</div>
 
-		<div id="footer-container">
-			<div id="footer-links">
-				<div class="links-container">
-					<div class="links-header"><h5>INFORMATION</h5></div>
-					<ul>
-						<li><a href="#">Terms & Conditions</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-					</ul>
-				</div>
-
-				<div class="links-container">
-					<div class="links-header"><h5>Work With Us</h5></div>
-					<ul>
-						<li><a href="#">Content Partners</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">Model Payment Program</a></li>
-						<li><a href="#">Webmasters</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-					</ul>
-				</div>
-
-
-				<div class="links-container">
-					<div class="links-header"><h5>SUPPORT</h5></div>
-					<ul>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Contact Support</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Feedback Forum</a></li>
-						<li><a href="#">Sitemap</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-					</ul>
-				</div>
-
-
-				<div class="links-container">
-					<div class="links-header"><h5>OTHER LINKS</h5></div>
-					<ul>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Insights Blog</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="copyright"><p>Projectx 2019 &copy;</p></div>
-
-		</div>
+		
 
 	</div>
 
 
 
-	<!-- THIS SHOULD BE PLANCED THE PART FILE OF THE FOOTER -->
-	<button id="scroll-top-button"></button>
-
-	<div id="login-container">
-		<div id="login-window">
-			<div id="login-close-button">x</div>
-			<h4 id="window-title">Member Login</h4>
-			<div id="login-controls-container">
-				<form action="dashboard.php" method="post">
-					<label for"username">Username</label>
-					<input type="text" name="username" />
-					<label for"password">Password</label>
-					<input type="text" name="username" />
-					<input type="submit" value="Login" />
-				</form>
-				<a href="#">Forgot password?</a> | <a href="#">Register</a>
-			</div>
-			<div id="login-footer"></div>
-		</div>
-	</div>
+	
 	
 
 	<script src="js/jquery-3.4.1.min.js"></script>
