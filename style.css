@@ -8,6 +8,12 @@ html,
 body {
     width: 100%;
     height: 100%;
+
+}
+
+
+#main-content-container{
+    background-color: #000000;
 }
 
 /******HEADER******/
@@ -642,10 +648,14 @@ body {
 
 .video-ads-top{
     width: 100%;
-    height: 40px;
+    height: 100px;
     background: rgba(0,0,0,.5);
-    position: absolute;
-    z-index: 99999;
+    max-width: 980px;
+}
+
+.video-ads-top img{
+    width: 100%;
+    height: 100%;
 }
 
 .video-ads-top a{
@@ -799,6 +809,8 @@ body {
 #tags-container-selected {
     max-width: 980px;
 }
+
+
 
 
 /******PAGINATION*******/
@@ -1561,6 +1573,13 @@ body {
         font-size: 14px;
     }
 
+
+    #single-content{
+        margin: 0 auto!important;
+        width: 768px;
+    }
+
+
     #footer-links:after {
         display: block;
         content: '';
@@ -1672,6 +1691,11 @@ body {
     .video-item-views-likes-dislikes {
         line-height: 30px;
         height: 30px;
+    }
+
+    #single-content{
+        margin: 0 auto!important;
+        width: 980px;
     }
 
     #sitename h1 a {
